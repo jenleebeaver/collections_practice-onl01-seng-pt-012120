@@ -53,7 +53,12 @@ def sum_array(integers)
 end
 
 def add_s(words)
- words.each[0,2,3].with_index do |word|
-   {}"#{word}s"
+ words.collect do |word|
+   if array[1] == word
+     word
+   else
+     word + "s"
+   end
+ end
    #[1,2].each_with_index.collect{ |element,index| }
 end
